@@ -1,0 +1,53 @@
+@media (max-width:991px) {
+    main #home-services .section-head-area::before , main #home-services .section-head-area::after{
+        width: 5%;
+    }
+}
+
+@media (max-width:768px) {
+    main #home-banner .banner-content .banner-content-text h1{
+        font-size: 28px;
+    }
+
+    main #home-banner .banner-content .banner-content-text .slogan{
+        font-size: 18px;
+    }
+
+    main #home-banner .home-slider-outer video{
+        min-height: 750px;
+    }
+
+    main #home-products .product-title-row{
+        margin-bottom: 25px;
+    }
+
+    main #home-products .section-desc{
+        margin-bottom: 5px;
+    }
+    
+    main .section-title{
+        font-size: 28px;
+    }
+}
+
+@media (max-width:575px) {
+    main #home-faq-area .faq-list-area .faq-item .item-top .item-title{
+        font-size: 16px;
+    }
+
+    main #home-faq-area .faq-list-area .faq-item .item-top {
+        padding: 10px 40px 10px 15px;
+    }
+
+    main #home-faq-area .faq-list-area .faq-item .item-bottom .item-text{
+        font-size: 16px;
+    }
+    
+    main #home-faq-area .faq-list-area .faq-item.opened .item-bottom{
+        padding: 12px;
+    }
+
+    main #home-bestseller-products .swiper-slide{
+        width: 320px;
+    }
+}

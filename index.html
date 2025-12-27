@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/responsive.css"><link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Document</title>
+</head>
+<body>
+<div id="svg-sprite-container" class="d-none"></div>
+    <header>
+        <div class="h-top">
+            <div class="container">
+                <div class="text">Kapıda ödeme seçenekleri ile birlikte çantalarımızdaki %10 indirimi kaçırmayın!</div>
+            </div>
+        </div>
+        <div class="h-bottom">
+            <div class="container">
+                <div class="header-wrapper d-flex justify-content-between align-items-center">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="assets/images/vega-transparent-logo.png" alt="Website Logo">
+                        </a>
+                    </div>
+
+                    <!-- Main Navigation -->
+                    <nav class="menu-wrapper">
+                        <ul class="menu">
+                            <li>
+                                <a href="#">Anasayfa</a>
+                                <!-- <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-85">
+                                        <a href="#">Bags</a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li>
+                                <a href="#">En Çok Satanlar</a>
+                            </li>
+                            <li>
+                                <a href="#">Yeni Gelenler</a>
+                            </li>
+                            <li>
+                                <a href="#">Nas Bag</a>
+                            </li>
+                            <li>
+                                <a href="#">İletişim</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Right Actions -->
+                    <div class="header-actions d-flex align-items-center">
+                        <!-- Search -->
+                        <div class="search-container">
+                            <input type="text" class="search-input" placeholder="Ürün ara...">
+                            <button class="search-btn">
+                                <svg width="20" height="20"><use xlink:href="#search"></use></svg>
+                            </button>
+                        </div>
+
+                        <!-- Account -->
+                        <a href="#" class="header-action-link">
+                            <svg width="20" height="20"><use xlink:href="#user"></use></svg>
+                            <span class="action-label">Hesabım</span>
+                        </a>
+
+                        <!-- Cart -->
+                        <a href="#" class="header-action-link cart-link">
+                            <svg width="30" height="30"><use xlink:href="#basket"></use></svg>
+                            <span class="cart-badge">0</span>
+                            <span class="action-label">Sepet</span>
+                        </a>
+
+                        <!-- Mobile Menu Toggle -->
+                        <button class="hamburger-menu" id="hamburger-toggle">
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-header">
+                    <h3>Menü</h3>
+                    <button class="close-mobile-menu" id="close-mobile-menu">
+                        <svg width="24" height="24"><use xlink:href="#close"></use></svg>
+                    </button>
+                </div>
+                
+                <div class="mobile-search-container">
+                    <input type="text" class="mobile-search-input" placeholder="Ürün ara...">
+                    <button class="mobile-search-btn">
+                        <svg width="20" height="20"><use xlink:href="#search"></use></svg>
+                    </button>
+                </div>
+
+                <nav class="mobile-menu-nav">
+                    <ul class="mobile-menu-list">
+                        <li>
+                            <a href="#">Anasayfa</a>
+                        </li>
+                        <li>
+                            <a href="#">En Çok Satanlar</a>
+                        </li>
+                        <li>
+                            <a href="#">Yeni Gelenler</a>
+                        </li>
+                        <li>
+                            <a href="#">Nas Bag</a>
+                        </li>
+                        <li>
+                            <a href="#">İletişim</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="mobile-menu-actions">
+                    <a href="#" class="mobile-action-btn">
+                        <svg width="20" height="20"><use xlink:href="#user"></use></svg>
+                        <span>Hesabım</span>
+                    </a>
+                    <a href="#" class="mobile-action-btn">
+                        <svg width="20" height="20"><use xlink:href="#basket"></use></svg>
+                        <span>Sepetim</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="home-banner">
+            <div class="home-slider-outer">
+                <video autoplay="" muted="" playsinline="" loop="" class="banner-video-box">
+                    <source src="" type="video/mp4" media="(max-width: 768px)">
+                    <source src="assets/images/video.mp4" type="video/mp4"></video>
+            </div>
+            <div class="banner-content">
+                <div class="container">
+                    <div class="banner-content-text">
+                        <h1>Yeni Favorinle Tanışmaya Hazır Mısın?</h1>
+                        <div class="slogan"><span>Vega Çanta</span> ile ruhunu ve yükünü yansıtan eşsiz parçalar seninle!</div>
+                        <div class="btn d-flex justify-content-center">
+                            <a href="/collections/all" class="banner-link">
+                                <svg width="32" height="32"><use xlink:href="#market"></use></svg>
+                                <span>Şimdi Alışverişe başla!</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="home-gender">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <a href="product.html" class="gender-card">
+                            <img src="assets/images/vitrin-1.png" alt="" class="img-responsive">
+                            <div class="gender-card-content">
+                                <div class="title">Kadın Çanta Modelleri</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a href="product.html" class="gender-card">
+                            <img src="assets/images/vitrin-1.png" alt="" class="img-responsive">
+                            <div class="gender-card-content">
+                                <div class="title">Kadın Çanta Modelleri</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a href="product.html" class="gender-card">
+                            <img src="assets/images/vitrin-1.png" alt="" class="img-responsive">
+                            <div class="gender-card-content">
+                                <div class="title">Kadın Çanta Modelleri</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a href="product.html" class="gender-card">
+                            <img src="assets/images/vitrin-1.png" alt="" class="img-responsive">
+                            <div class="gender-card-content">
+                                <div class="title">Kadın Çanta Modelleri</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="home-products">
+            <div class="container">
+                <div class="row justify-content-between align-items-center product-title-row">
+                    <div class="col-lg-6">
+                        <div class="section-title">En Çok Sevilen Vega Favorileri</div>
+                        <div class="section-desc">Binlerce kadının stilini tamamlayan, sezona damga vuran ve en hızlı tükenen modellerimiz şimdi stokta.</div>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#" class="cta-btn">
+                            <svg width="32" height="32"><use xlink:href="#bags"></use></svg>
+                            <span>Ürünler</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 products-col">
+                        <a href="product.html" class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                <div class="discount">-15%</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="category">Vega Cüzdan</div>
+                                <div class="title">Nas Bag</div>
+                                <div class="stars d-flex align-items-center">
+                                    <div class="stars-container">
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                    </div>
+                                    <div class="stars-rate">(4.9)</div>
+                                </div>
+                                <div class="price d-flex align-items-center">
+                                    <div class="discount-price">250₺</div>
+                                    <div class="price-underline">300₺</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 products-col">
+                        <a href="product.html" class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                <div class="discount">-15%</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="category">Vega Cüzdan</div>
+                                <div class="title">Nas Bag</div>
+                                <div class="stars d-flex align-items-center">
+                                    <div class="stars-container">
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                    </div>
+                                    <div class="stars-rate">(4.9)</div>
+                                </div>
+                                <div class="price d-flex align-items-center">
+                                    <div class="discount-price">250₺</div>
+                                    <div class="price-underline">300₺</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 products-col">
+                        <a href="product.html" class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                <div class="discount">-15%</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="category">Vega Cüzdan</div>
+                                <div class="title">Nas Bag</div>
+                                <div class="stars d-flex align-items-center">
+                                    <div class="stars-container">
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                    </div>
+                                    <div class="stars-rate">(4.9)</div>
+                                </div>
+                                <div class="price d-flex align-items-center">
+                                    <div class="discount-price">250₺</div>
+                                    <div class="price-underline">300₺</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 products-col">
+                        <a href="product.html" class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                <div class="discount">-15%</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="category">Vega Cüzdan</div>
+                                <div class="title">Nas Bag</div>
+                                <div class="stars d-flex align-items-center">
+                                    <div class="stars-container">
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                    </div>
+                                    <div class="stars-rate">(4.9)</div>
+                                </div>
+                                <div class="price d-flex align-items-center">
+                                    <div class="discount-price">250₺</div>
+                                    <div class="price-underline">300₺</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 products-col">
+                        <a href="product.html" class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                <div class="discount">-15%</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="category">Vega Cüzdan</div>
+                                <div class="title">Nas Bag</div>
+                                <div class="stars d-flex align-items-center">
+                                    <div class="stars-container">
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                    </div>
+                                    <div class="stars-rate">(4.9)</div>
+                                </div>
+                                <div class="price d-flex align-items-center">
+                                    <div class="discount-price">250₺</div>
+                                    <div class="price-underline">300₺</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 products-col">
+                        <a href="product.html" class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                <div class="discount">-15%</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="category">Vega Cüzdan</div>
+                                <div class="title">Nas Bag</div>
+                                <div class="stars d-flex align-items-center">
+                                    <div class="stars-container">
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                    </div>
+                                    <div class="stars-rate">(4.9)</div>
+                                </div>
+                                <div class="price d-flex align-items-center">
+                                    <div class="discount-price">250₺</div>
+                                    <div class="price-underline">300₺</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 products-col">
+                        <a href="product.html" class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                <div class="discount">-15%</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="category">Vega Cüzdan</div>
+                                <div class="title">Nas Bag</div>
+                                <div class="stars d-flex align-items-center">
+                                    <div class="stars-container">
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                    </div>
+                                    <div class="stars-rate">(4.9)</div>
+                                </div>
+                                <div class="price d-flex align-items-center">
+                                    <div class="discount-price">250₺</div>
+                                    <div class="price-underline">300₺</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 products-col">
+                        <a href="product.html" class="product-card">
+                            <div class="product-image">
+                                <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                <div class="discount">-15%</div>
+                            </div>
+                            <div class="product-content">
+                                <div class="category">Vega Cüzdan</div>
+                                <div class="title">Nas Bag</div>
+                                <div class="stars d-flex align-items-center">
+                                    <div class="stars-container">
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                        <svg width="32" height="32"><use xlink:href="#stars"></use></svg>
+                                    </div>
+                                    <div class="stars-rate">(4.9)</div>
+                                </div>
+                                <div class="price d-flex align-items-center">
+                                    <div class="discount-price">250₺</div>
+                                    <div class="price-underline">300₺</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="home-logo-slider">
+            <div class="container">
+                <div class="logo-slider-area">
+                    <div class="logo-slider">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                    </div>
+                    <div class="logo-slider">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                    </div>
+                    <div class="logo-slider">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                        <img src="assets/images/polo_lg.jpg" alt="" class="logo-item">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="home-services">
+            <div class="container">
+                <div class="section-head-area d-flex flex-column">
+                    <div class="section-subtitle">Vega Çanta</div>
+                    <div class="section-title">Tercih edilen koleksiyonlarımız</div>
+                </div>
+                <div class="row services-row">
+                            <div class="col-lg-6 services-col">
+                                <a href="#" class="services-content">
+                                    <img src="assets/images/dummy-image.png" class="img-responsive">
+                                    <div class="services-title">Kadın Çanta Modelleri</div>
+                                </a>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 services-col">
+                                <a href="#" class="services-content">
+                                    <img src="assets/images/dummy-image-2.png" class="img-responsive">
+                                    <div class="services-title">Kadın Çanta Modelleri</div>
+                                </a>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 services-col">
+                                <a href="h" class="services-content">
+                                    <img src="assets/images/dummy-image-2.png" class="img-responsive">
+                                    <div class="services-title">Kadın Çanta Modelleri</div>
+                                </a>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 services-col">
+                                <a href="#" class="services-content">
+                                    <img src="assets/images/dummy-image-2.png" class="img-responsive">
+                                    <div class="services-title">Kadın Çanta Modelleri</div>
+                                </a>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 services-col">
+                                <a href="#" class="services-content">
+                                    <img src="assets/images/dummy-image-2.png" class="img-responsive">
+                                    <div class="services-title">Kadın Çanta Modelleri</div>
+                                </a>
+                            </div>
+                    
+                            <div class="col-lg-6 services-col">
+                                <a href="#" class="services-content">
+                                    <img src="assets/images/dummy-image.png" class="img-responsive">
+                                    <div class="services-title">Kadın Çanta Modelleri</div>
+                                </a>
+                            </div>
+                            </div>
+            </div>
+        </section>
+        <section id="home-product-tabs">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="section-title-head text-center">
+                            <div class="section-subtitle">Vega Exclusive</div>
+                            <div class="section-title">Şıklığını Vega Standartlarıyla Birlrştir!</div>
+                            <div class="section-desc">Sıradanlığı reddeden ve kaliteyi bir yaşam biçimi haline getiren kadınlar için koleksiyonumuzu yeniden kurguladık.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Menu -->
+                <div class="tabs-menu-container">
+                    <div class="tabs-menu">
+                        <button class="tab-button active" data-tab="yeni-gelenler">YENİ GELENLER</button>
+                        <button class="tab-button" data-tab="cok-satanlar">ÇOK SATANLAR</button>
+                        <button class="tab-button" data-tab="vega-exclusive">VEGA EXCLUSIVE</button>
+                    </div>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="tabs-content">
+                    <!-- YENİ GELENLER -->
+                    <div class="tab-pane active" data-tab="yeni-gelenler">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-15%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Çanta</div>
+                                        <div class="title">Nas Bag New</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(5.0)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">280₺</div>
+                                            <div class="price-underline">330₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-20%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Aksesuar</div>
+                                        <div class="title">Modern Çanta</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(4.8)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">240₺</div>
+                                            <div class="price-underline">300₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-10%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Cüzdan</div>
+                                        <div class="title">Premium Çanta</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(4.9)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">350₺</div>
+                                            <div class="price-underline">390₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-18%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Collection</div>
+                                        <div class="title">Elegance Bag</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(5.0)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">410₺</div>
+                                            <div class="price-underline">500₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-15%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Çanta</div>
+                                        <div class="title">Nas Bag New</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(5.0)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">280₺</div>
+                                            <div class="price-underline">330₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-20%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Aksesuar</div>
+                                        <div class="title">Modern Çanta</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(4.8)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">240₺</div>
+                                            <div class="price-underline">300₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-10%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Cüzdan</div>
+                                        <div class="title">Premium Çanta</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(4.9)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">350₺</div>
+                                            <div class="price-underline">390₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-18%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Collection</div>
+                                        <div class="title">Elegance Bag</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(5.0)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">410₺</div>
+                                            <div class="price-underline">500₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ÇOK SATANLAR -->
+                    <div class="tab-pane" data-tab="cok-satanlar">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-25%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Best Seller</div>
+                                        <div class="title">Best Seller Bag</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(5.0)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">199₺</div>
+                                            <div class="price-underline">265₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-30%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Best Seller</div>
+                                        <div class="title">Popular Model</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(4.9)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">175₺</div>
+                                            <div class="price-underline">250₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-22%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Best Seller</div>
+                                        <div class="title">Classic Style</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(4.8)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">285₺</div>
+                                            <div class="price-underline">365₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-28%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Best Seller</div>
+                                        <div class="title">Trending Now</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(5.0)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">325₺</div>
+                                            <div class="price-underline">450₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-15%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Çanta</div>
+                                        <div class="title">Nas Bag New</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(5.0)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">280₺</div>
+                                            <div class="price-underline">330₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-20%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Aksesuar</div>
+                                        <div class="title">Modern Çanta</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(4.8)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">240₺</div>
+                                            <div class="price-underline">300₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-10%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Cüzdan</div>
+                                        <div class="title">Premium Çanta</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(4.9)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">350₺</div>
+                                            <div class="price-underline">390₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-18%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Collection</div>
+                                        <div class="title">Elegance Bag</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(5.0)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">410₺</div>
+                                            <div class="price-underline">500₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- VEGA EXCLUSIVE -->
+                    <div class="tab-pane" data-tab="vega-exclusive">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-35%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Exclusive</div>
+                                        <div class="title">Luxury Edition</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(5.0)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">550₺</div>
+                                            <div class="price-underline">850₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-32%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Exclusive</div>
+                                        <div class="title">Premium Exclusive</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(5.0)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">475₺</div>
+                                            <div class="price-underline">700₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-40%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Exclusive</div>
+                                        <div class="title">Limited Edition</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(5.0)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">600₺</div>
+                                            <div class="price-underline">1000₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-38%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Exclusive</div>
+                                        <div class="title">Designer Series</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(5.0)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">525₺</div>
+                                            <div class="price-underline">850₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-15%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Çanta</div>
+                                        <div class="title">Nas Bag New</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(5.0)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">280₺</div>
+                                            <div class="price-underline">330₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-20%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Aksesuar</div>
+                                        <div class="title">Modern Çanta</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(4.8)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">240₺</div>
+                                            <div class="price-underline">300₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-10%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Cüzdan</div>
+                                        <div class="title">Premium Çanta</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(4.9)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">350₺</div>
+                                            <div class="price-underline">390₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 products-col">
+                                <a href="product.html" class="product-card">
+                                    <div class="product-image">
+                                        <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                        <div class="discount">-18%</div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="category">Vega Collection</div>
+                                        <div class="title">Elegance Bag</div>
+                                        <div class="stars d-flex align-items-center">
+                                            <div class="stars-container">
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                                <svg width="16" height="16"><use xlink:href="#stars"></use></svg>
+                                            </div>
+                                            <div class="stars-rate">(5.0)</div>
+                                        </div>
+                                        <div class="price d-flex align-items-center">
+                                            <div class="discount-price">410₺</div>
+                                            <div class="price-underline">500₺</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="home-campaign">
+            <div class="container">
+                <div class="section-title-head">
+                    <div class="section-subtitle">Vega Çanta</div>
+                    <div class="section-title">K</div>
+                </div>
+            </div>
+        </section> -->
+        <section id="home-comments">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5"> 
+                        <div class="section-title-head">
+                            <div class="section-subtitle">Vega Çanta</div>
+                            <div class="section-title">Vega Stilini Onlardan Dinleyin</div>
+                            <div class="section-desc">Binlerce kadının günlük şıklığına ve en özel anlarına eşlik ettik. Vega deneyimini yaşayanların gerçek hikayelerine göz atın!</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7"> 
+                        <div class="swiper comments-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="comments-box">
+                                        <div class="comments-head-area d-flex justify-content-between">
+                                            <div class="comments-head">
+                                            <div class="comments-title">
+                                                Yska Marcelo
+                                            </div>
+                                            <div class="comments-date">
+                                                24.10.2025
+                                            </div>
+                                            </div>
+                                            <div class="comments-icon">
+                                            <div class="google-icon"><img src="https://www.basemedicale.com/wp-content/themes/CrabsMedia/assets/images/google-icon.png" alt="Google Icon" class="google-icon"></div>
+                                            <div class="comments-stars"><img src="https://www.basemedicale.com/wp-content/themes/CrabsMedia/assets/images/stars.png" alt="Google Icon" class="stars-icon"></div>
+                                            </div>
+                                        </div>
+                                        <div class="comments-content">
+                                            hayatimda daha ahlaklı bir esnaf görmedim. cantalari ayakkabıları hem çok şık hem çok kaliteli. kotu yorum yapanlari anlamak cok zor. müşteriyi asla mağdur etmiyorlar. basarilarinin devamını dilerim🧿
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="comments-box">
+                                        <div class="comments-head-area d-flex justify-content-between">
+                                            <div class="comments-head">
+                                            <div class="comments-title">
+                                                Yska Marcelo
+                                            </div>
+                                            <div class="comments-date">
+                                                24.10.2025
+                                            </div>
+                                            </div>
+                                            <div class="comments-icon">
+                                            <div class="google-icon"><img src="https://www.basemedicale.com/wp-content/themes/CrabsMedia/assets/images/google-icon.png" alt="Google Icon" class="google-icon"></div>
+                                            <div class="comments-stars"><img src="https://www.basemedicale.com/wp-content/themes/CrabsMedia/assets/images/stars.png" alt="Google Icon" class="stars-icon"></div>
+                                            </div>
+                                        </div>
+                                        <div class="comments-content">
+                                            hayatimda daha ahlaklı bir esnaf görmedim. cantalari ayakkabıları hem çok şık hem çok kaliteli. kotu yorum yapanlari anlamak cok zor. müşteriyi asla mağdur etmiyorlar. basarilarinin devamını dilerim🧿
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="comments-box">
+                                        <div class="comments-head-area d-flex justify-content-between">
+                                            <div class="comments-head">
+                                            <div class="comments-title">
+                                                Yska Marcelo
+                                            </div>
+                                            <div class="comments-date">
+                                                24.10.2025
+                                            </div>
+                                            </div>
+                                            <div class="comments-icon">
+                                            <div class="google-icon"><img src="https://www.basemedicale.com/wp-content/themes/CrabsMedia/assets/images/google-icon.png" alt="Google Icon" class="google-icon"></div>
+                                            <div class="comments-stars"><img src="https://www.basemedicale.com/wp-content/themes/CrabsMedia/assets/images/stars.png" alt="Google Icon" class="stars-icon"></div>
+                                            </div>
+                                        </div>
+                                        <div class="comments-content">
+                                            hayatimda daha ahlaklı bir esnaf görmedim. cantalari ayakkabıları hem çok şık hem çok kaliteli. kotu yorum yapanlari anlamak cok zor. müşteriyi asla mağdur etmiyorlar. basarilarinin devamını dilerim🧿
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="comments-box">
+                                        <div class="comments-head-area d-flex justify-content-between">
+                                            <div class="comments-head">
+                                            <div class="comments-title">
+                                                Yska Marcelo
+                                            </div>
+                                            <div class="comments-date">
+                                                24.10.2025
+                                            </div>
+                                            </div>
+                                            <div class="comments-icon">
+                                            <div class="google-icon"><img src="https://www.basemedicale.com/wp-content/themes/CrabsMedia/assets/images/google-icon.png" alt="Google Icon" class="google-icon"></div>
+                                            <div class="comments-stars"><img src="https://www.basemedicale.com/wp-content/themes/CrabsMedia/assets/images/stars.png" alt="Google Icon" class="stars-icon"></div>
+                                            </div>
+                                        </div>
+                                        <div class="comments-content">
+                                            hayatimda daha ahlaklı bir esnaf görmedim. cantalari ayakkabıları hem çok şık hem çok kaliteli. kotu yorum yapanlari anlamak cok zor. müşteriyi asla mağdur etmiyorlar. basarilarinin devamını dilerim🧿
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swipe-button-container d-flex justify-content-center">
+                                <div class="swipe-button swipe-button-prev">
+                                    <svg width="32" height="32"><use xlink:href="#chevron-left"></use></svg>
+                                </div>
+                                <div class="swipe-button swipe-button-next">
+                                    <svg width="32" height="32"><use xlink:href="#chevron-right"></use></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="home-faq-area">
+            <div class="container">
+                <div class="section-title-area d-flex flex-column align-items-center">
+                    <div class="section-top-title">
+                        Vega Çanta Deneyimi
+                    </div>
+                    <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+                </div>
+                <div class="faq-list-area collapsed-list-area">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="faq-item collapsed-item">
+                                <div class="item-top">
+                                    <div class="item-title">Çantalarınızın materyal kalitesi nedir?</div>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="item-text">
+                                        Vega Çanta olarak birinci sınıf vegan deri ve dayanıklı iç astar kullanıyoruz. Ürünlerimizde soyulma ve çatlamaya karşı yüksek dirençli materyaller tercih edilmektedir.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq-item collapsed-item">
+                                <div class="item-top">
+                                    <div class="item-title">Kargom ne zaman ulaşır?</div>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="item-text">
+                                        Hafta içi saat 14:00'e kadar verilen siparişler aynı gün kargoya verilir. Teslimat süresi bulunduğunuz şehre göre ortalama 1-3 iş günüdür.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq-item collapsed-item">
+                                <div class="item-top">
+                                    <div class="item-title">İade ve değişim politikanız nasıl?</div>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="item-text">
+                                        Elinize ulaşan ürünü beğenmemeniz durumunda, 14 gün içerisinde kutusu ve aksesuarlarıyla birlikte koşulsuz iade veya değişim yapabilirsiniz.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="faq-item collapsed-item">
+                                <div class="item-top">
+                                    <div class="item-title">Çantamın bakımını nasıl yapmalıyım?</div>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="item-text">
+                                        Çantanızı nemli, yumuşak bir bezle silerek temizleyebilirsiniz. Kimyasal temizleyicilerden ve yoğun alkol içeren dezenfektanlardan uzak tutmanızı öneririz.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq-item collapsed-item">
+                                <div class="item-top">
+                                    <div class="item-title">Kredi kartına taksit imkanı var mı?</div>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="item-text">
+                                        Evet, tüm banka ve kredi kartlarına 12 aya varan taksit seçenekleri sunuyoruz. Ödeme sayfasında kart bilgilerinizi girerek seçenekleri görebilirsiniz.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq-item collapsed-item">
+                                <div class="item-top">
+                                    <div class="item-title">Ürünlerinizin garantisi var mı?</div>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="item-text">
+                                        Tüm Vega Çanta modelleri, üretim kaynaklı hatalara karşı 1 yıl boyunca garanti kapsamındadır. Herhangi bir sorunda teknik ekibimiz destek sağlamaktadır.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="home-bestseller-products">
+            <div class="container">
+                <div class="section-title-head">
+                    <div class="section-subtitle">Vega Çanta</div>
+                    <div class="section-title">Beğenebileceğiniz Koleksiyonlar</div>
+                </div>
+                <div class="swiper myBestsellerSwiper">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide">
+                            <div class="product-cards">
+                                <div class="product-image">
+                                    <img src="assets/images/product-1.jpg" alt="" class="img-responsive">
+                                </div>
+                                <div class="product-card-content">
+                                    <div class="title">Lorem Ipsum</div>
+                                    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, expedita. Porro iure et sit est voluptatibus, numquam eius aliquam cum.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product-cards">
+                                <div class="product-image">
+                                    <img src="assets/images/product-2.jpg" alt="" class="img-responsive">
+                                </div>
+                                <div class="product-card-content">
+                                    <div class="title">Lorem Ipsum</div>
+                                    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, expedita. Porro iure et sit est voluptatibus, numquam eius aliquam cum.</div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="swiper-slide">
+                            <div class="product-cards">
+                                <div class="product-image">
+                                    <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                </div>
+                                <div class="product-card-content">
+                                    <div class="title">Lorem Ipsum</div>
+                                    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, expedita. Porro iure et sit est voluptatibus, numquam eius aliquam cum.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-cards">
+                                <div class="product-image">
+                                    <img src="assets/images/product-1.jpg" alt="" class="img-responsive">
+                                </div>
+                                <div class="product-card-content">
+                                    <div class="title">Lorem Ipsum</div>
+                                    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, expedita. Porro iure et sit est voluptatibus, numquam eius aliquam cum.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product-cards">
+                                <div class="product-image">
+                                    <img src="assets/images/product-2.jpg" alt="" class="img-responsive">
+                                </div>
+                                <div class="product-card-content">
+                                    <div class="title">Lorem Ipsum</div>
+                                    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, expedita. Porro iure et sit est voluptatibus, numquam eius aliquam cum.</div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="swiper-slide">
+                            <div class="product-cards">
+                                <div class="product-image">
+                                    <img src="assets/images/product-3.jpg" alt="" class="img-responsive">
+                                </div>
+                                <div class="product-card-content">
+                                    <div class="title">Lorem Ipsum</div>
+                                    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, expedita. Porro iure et sit est voluptatibus, numquam eius aliquam cum.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swipe-button-container d-flex justify-content-center">
+                        <div class="swipe-button swipe-button-prev">
+                            <svg width="32" height="32"><use xlink:href="#chevron-left"></use></svg>
+                        </div>
+                        <div class="swipe-button swipe-button-next">
+                            <svg width="32" height="32"><use xlink:href="#chevron-right"></use></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="main-footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Logo & Description -->
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <div class="footer-logo">
+                        <img src="assets/images/vega-transparent-logo.png" alt="Vega Çanta Logo">
+                    </div>
+                    <p class="footer-desc">Vega Çanta ile ruhunu ve yükünü yansıtan eşsiz parçalar seninle. Kalite ve şıklığın buluştuğu noktada bizi keşfet.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" title="Facebook">
+                            <svg width="24" height="24"><use xlink:href="#facebook"></use></svg>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <svg width="24" height="24"><use xlink:href="#instagram"></use></svg>
+                        </a>
+                        <a href="#" class="social-link" title="Tiktok">
+                            <svg><use xlink:href="#tiktok"></use></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 footer-col">
+                    <h4 class="footer-title">Hızlı Linkler</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Anasayfa</a></li>
+                        <li><a href="#">Yeni Gelenler</a></li>
+                        <li><a href="#">En Çok Satanlar</a></li>
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div class="col-lg-2 col-md-6 footer-col">
+                    <h4 class="footer-title">Müşteri Hizmetleri</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">İletişim</a></li>
+                        <li><a href="#">Sık Sorulan Sorular</a></li>
+                        <li><a href="#">Kargo & İade</a></li>
+                        <li><a href="#">Ürün Garantisi</a></li>
+                        <li><a href="#">Sipariş Takibi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="col-lg-2 col-md-6 footer-col">
+                    <h4 class="footer-title">Hukuki</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Gizlilik Politikası</a></li>
+                        <li><a href="#">Kullanım Şartları</a></li>
+                        <li><a href="#">İade Politikası</a></li>
+                        <li><a href="#">Çerez Politikası</a></li>
+                        <li><a href="#">KVKK</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="newsletter-desc">En yeni ürünler ve özel teklifler için haberdar ol.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="E-mail adresiniz..." required>
+                        <button type="submit">Abone Ol</button>
+                    </form>
+                    <div class="payment-methods">
+                        <p class="payment-title">Kabul Edilen Ödemeler:</p>
+                        <div class="payment-icons">
+                            <img src="assets/images/visa.png" alt="Visa" title="Visa">
+                            <img src="assets/images/mastercard.png" alt="Mastercard" title="Mastercard">
+                            <img src="assets/images/paypal.png" alt="PayPal" title="PayPal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content d-flex justify-content-between align-items-center">
+                <div class="copyright">
+                    <p>&copy; 2025 <strong>Vega Çanta</strong>. Tüm hakları saklıdır.</p>
+                </div>
+                <div class="footer-info">
+                    <span class="info-item">
+                        <svg width="18" height="18"><use xlink:href="#phone"></use></svg>
+                        <a href="tel:+905551234567">+90 (555) 123 45 67</a>
+                    </span>
+                    <span class="info-item">
+                        <svg width="18" height="18"><use xlink:href="#email"></use></svg>
+                        <a href="mailto:info@vegacanta.com">info@vegacanta.com</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
+
