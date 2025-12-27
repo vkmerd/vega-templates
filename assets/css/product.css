@@ -570,6 +570,8 @@
     -webkit-text-fill-color: transparent;
 }
 
+
+
 /* Responsive */
 @media (max-width: 991px) {
     .product-info { padding-left: 0; margin-top: 20px; }
